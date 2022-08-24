@@ -4,3 +4,11 @@
 // 782 -> 8
 // 918 -> 1
 
+int PrintSecondInt() 
+{
+    int x = new Random().Next(100, 1000);
+    Console.WriteLine($"случайное число сгенерировалось {x}");
+    int second = x%100/10;
+    return second;
+}
+Console.WriteLine(PrintSecondInt());
